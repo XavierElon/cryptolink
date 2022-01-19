@@ -4,12 +4,20 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App/App';
 import { Provider } from 'react-redux';
+// import { Web3ReactProvider } from '@web3-react/core';
+// import Web3 from 'web3';
 import store from './redux/store'
 import reportWebVitals from './reportWebVitals';
 
+// function getLibrary(provider: any) {
+//   return new Web3(provider)
+// }
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <Web3ReactProvider getLibrary={getLibrary}> */}
+      <App />
+    {/* </Web3ReactProvider> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
