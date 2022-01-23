@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useWeb3React } from '@web3-react/core';
+import {
+  Count,
+  Counter
+} from '../components'
 // import { injected } from '../wallet/Connect';
 // import web3 from 'web3';
 import logo from '../logo.svg';
@@ -65,6 +69,7 @@ const App = () => {
           </div>
         ))}
       </div>
+      <Counter count={10}></Counter>
     </div>
   );
 }
