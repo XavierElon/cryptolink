@@ -41,7 +41,7 @@ contract NFTCollectible is ERC721Enumerable, Ownable {
     function mintNFTs(uint _count) public payable {
         uint totalMinted = _tokenIds.current();
 
-        require(totalMinted.add(_count) < = MAX_SUPPLY, "Not enough NFTs");
+        require(totalMinted.add(_count) <= MAX_SUPPLY, "Not enough NFTs");
         require(_count > 0 && _count <= MAX_PER_MINT, "Cannot mint specified number of NFTs.");
         require(msg.value >= PRICE.mul(_count), "Not enough ether to purchase NFTs");
 
