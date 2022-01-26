@@ -4,6 +4,7 @@ import {
   Count,
   Counter
 } from '../components'
+import { ConnectWallet } from '../utils'
 // import { injected } from '../wallet/Connect';
 // import web3 from 'web3';
 import logo from '../logo.svg';
@@ -70,6 +71,7 @@ const App = () => {
         ))}
       </div>
       <Counter count={10}></Counter>
+      <ConnectWallet count={11}></ConnectWallet>
     </div>
   );
 }
