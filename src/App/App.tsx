@@ -58,8 +58,8 @@ const App = () => {
       </div>
 
       {/* APE LIST */}
-      <div className="cards-wrapper">
-        {apes.map((ape, index) => (
+      {/* <div className="cards-wrapper"> */}
+        {/* {apes.map((ape, index) => (
           <div className="cards-item" key={index}>
             <div className="img-wrapper">
               <img src={ape.img} alt={`ape_${index}`} />
@@ -70,7 +70,7 @@ const App = () => {
           </div>
         ))}
       </div>
-      <Counter count={10}></Counter>
+      <Counter count={10}></Counter> */}
       <ConnectWallet count={11}></ConnectWallet>
     </div>
   );
