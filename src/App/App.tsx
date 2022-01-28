@@ -52,7 +52,7 @@ const App = () => {
       {/* MAIN BANNER */}
       <div className="main-card-wrapper" style={{ backgroundImage: `url(${mainBgImage})` }}>
         <div className="main-card__inner-wrapper">
-          <h1 className="header-txt">React Minting Website</h1>
+          <h1 className="header-txt">BlockChain Guild</h1>
           <button className="main-mint-btn">Mint</button>
         </div>
       </div>
